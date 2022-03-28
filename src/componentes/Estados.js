@@ -53,7 +53,7 @@ export default function Uf(){
 
     const handleSearchPrevisao = () => {
       
-      fetch(`http://api.weatherapi.com/v1/current.json?key=82cde7e060994480816175927222503&q=${opCidade}&lang=pt`)
+      fetch(`https://api.weatherapi.com/v1/current.json?key=82cde7e060994480816175927222503&q=${opCidade}&lang=pt`)
         .then((res) => {
           if (res.status === 200) {
             return res.json();
